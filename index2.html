@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<title>Practice!</title>
+</head>
+<body class="btn-info">
+    <span><i class="glyphicon glyphicon-chevron-left" id="back" onclick="back();"></span></i>
+    <center>
+    <h1>Practice!</h1>
+    </center>
+    <hr>
+    <h3>Choose your difficulty!</h3>
+    <span><button class="btn btn-success button">Easy <span>&#128522;</span></button> <button class="btn btn-warning button">Medium <span>&#128548;</span></button> <button class="btn btn-danger button">Insane <span>&#128545;</span></button></span>
+    <h3>Your score: <span id="score">0</span></h3>
+    <h3>Perform this move: <span id="perform_move"></span></h3>
+    <button onclick="randomnum();" class="btn btn-primary">Start</button>
+    <h4><b class="text-danger">NOTE:</b>Perform the given move standing or you may not get right answer! And go to the learn how to fight page before coming here!</h4>
+    <br>
+    <div id="camera"></div>
+    <br>
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
